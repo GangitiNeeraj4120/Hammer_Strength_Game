@@ -1,3 +1,4 @@
+/*getting access to buttons and divs*/
 let score = document.querySelector(".score");
 let neddle = document.querySelector(".neddle");
 let btn = document.querySelector(".btn");
@@ -11,6 +12,7 @@ let player = "X";
 
 let strength=[];
 
+/*Adding function to the 'Stop' button*/
 btn.addEventListener("click", () => {
     neddle.classList.add('pause');
     let now = Date.now();
@@ -33,7 +35,7 @@ btn.addEventListener("click", () => {
     console.log(strength);
 
     score.innerText = `Your score is ${val}`;
-
+/*Creating a toggle for two player mode*/
     if(player == "X"){
         score.innerText += "\nThis is O player's turn";
         player = "O";
@@ -45,7 +47,7 @@ btn.addEventListener("click", () => {
 
 });
 
-
+/*Adding function to the 'NewGame' button*/
 newGame.addEventListener("click", () =>{
     neddle.classList.remove('neddle');
     setTimeout(() =>{
@@ -54,6 +56,7 @@ newGame.addEventListener("click", () =>{
     }, 10);
 
     setTimeout(()=>{
+        /*Comparing the scores of two players*/
         if(strength[0]>strength[1]){
             alert("Player 'O' won");
             location.reload()
