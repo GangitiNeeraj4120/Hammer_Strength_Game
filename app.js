@@ -52,7 +52,6 @@ newGame.addEventListener("click", () =>{
         neddle.classList.remove('pause');
         neddle.classList.add('neddle');
     }, 10);
-    // location.reload()
 
     setTimeout(()=>{
         if(strength[0]>strength[1]){
