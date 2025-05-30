@@ -17,8 +17,6 @@ h1 {
 
 
 .content {
-    /* border: 2px solid #EAEFEF;
-    border-radius: 1rem; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -27,23 +25,6 @@ h1 {
     position: relative;
     right: 3vw;
 }
-
-/* .hamm {
-    border: 2px solid #EAEFEF;
-    border-radius: 1rem;
-    background-image: url('hammer.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    transform: rotate(130deg);
-    height: 10vh;
-    width: 10vw; 
-    position: relative;
-    left: 7.5vw;
-    top: 8vh;
-    z-index: 0;
-}*/
-
-
 
 @keyframes punch {
     from {
@@ -57,8 +38,6 @@ h1 {
 }
 
 .container {
-    /* border: 2px solid #EAEFEF;
-    border-radius: 1rem; */
     height: 80vh;
     width: 60vw;
     display: flex;
@@ -66,8 +45,6 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /* position: relative;
-    left: 150px; */
 }
 
 @media screen and (max-width: 520px) {
@@ -84,8 +61,6 @@ h1 {
 }
 
 .image {
-    /* border: 2px solid #EAEFEF;
-    border-radius: 1rem; */
     min-width: max-content;
     z-index: -990;
     position: relative;
@@ -98,8 +73,6 @@ h1 {
 
 .neddle {
     background-color: black;
-    /* border: 2px solid #EAEFEF;
-    border-radius: 1rem; */
     width: 4px;
     height: 100px;
     z-index: 1;
@@ -139,8 +112,6 @@ h1 {
 }
 
 .scoreboard {
-    /* border: 2px solid #EAEFEF;
-    border-radius: 1rem; */
     height: 200px;
     width: 200px;
     display: flex;
